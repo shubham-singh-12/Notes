@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Practice Set 4</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* Question 1 */
+        #my-div {
+            height: 200px;
+            width: 200px;
+            margin: 5px;
+            border: 5px solid black;
+            box-sizing: border-box;
+            background-color: cadetblue;
+        }
+
+        #my-div-2 {
+            height: 200px;
+            width: 200px;
+            margin: 5px;
+            border: 5px solid black;
+            box-sizing: content-box;
+            background-color: cadetblue;
+        }
+
+        
+        /* Question 2 */
+        .my-button {
+            padding: 10px 15px;
+        }
+
+
+        /* Question 3 */
+        .my-button-1 {
+            margin: 100px;
+
+        }
+
+
+        /* Question 4 */
+        .my-button-2 {
+            height: 70px;
+            width: 70px;
+            margin: 15px;
+            padding: 15px 20px;
+            border: 2px dotted red;
+            border-radius: 50%;
+        }
+
+
+        /* Question 5 */
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 5px solid black;
+            margin: 10px;
+            color: white;
+            font-size: 20px;
+        }
+
+        #my-box-1 {
+            background-color: crimson;
+            box-sizing: border-box;
+        }
+
+        #my-box-2 {
+            background-color: crimson;
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. Create a div with height & width 200px and observe difference values in the box model by inspecting ? -->
+    <div id="my-div">Box 1</div>
+    <div id="my-div-2">Box 2</div>
+
+
+
+    <!-- ------------------------------------------------------ -->
+    <!-- 2. Create a button and give 10px padding to top and bottom and 15px on the sides ? -->
+    <button class="my-button">Click Me</button>
+
+
+
+    <!-- ------------------------------------------------------ -->
+    <!-- 3. Add 100px margin to the button on all sides ? -->
+    <button class="my-button-1">Click Me</button>
+
+
+
+    <!-- ------------------------------------------------------ -->
+    <!-- 4. Add dotter border with color red and so much that the button becomes a circle ? -->
+    <button class="my-button-2">Click Me</button>
+
+
+
+    <!-- ------------------------------------------------------ -->
+    <!-- 5. Create 2 boxes with different box-sizing values and observe changes in box model ? -->
+    <div id="my-box-1" class="box">Box 1</div>
+    <div id="my-box-2" class="box">Box 2</div>
+
+</body>
+
+</html>
