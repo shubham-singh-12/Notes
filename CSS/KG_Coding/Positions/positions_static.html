@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS -- Positions (Static, Relative, Absolute, Fixed)</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: crimson;
+            margin: 10px;
+            color: white;
+        }
+
+        #box1 {
+            position: static;
+
+            /* position: static -> prevents left, right, top, bottom, z-index */
+            left: 50px;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box1" class="box">Static Box</div>
+
+</body>
+
+</html>

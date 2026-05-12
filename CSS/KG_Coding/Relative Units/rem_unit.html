@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS -- Relative Units (rem)</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            /* Root font-size => User Defined */
+            font-size: 20px;
+        }
+
+        #first {
+            width: 200px;
+            height: 200px;
+            background-color: crimson;
+            font-size: 20px;
+        }
+
+        #second {
+            width: 50%;
+            height: 60%;
+            background-color: lightskyblue;
+
+            /* Here, 1rem = 2 * root (px) */
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    Body Text
+
+    <div id="first">
+        First div
+        <div id="second">
+            Second div
+        </div>
+    </div>
+
+</body>
+
+</html>

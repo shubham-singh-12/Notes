@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS -- Z-index</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            position: absolute;
+            color: white;
+            font-size: 20px;
+            border: 3px solid black;
+        }
+
+        #box1 {
+            top: 50px;
+            left: 50px;
+            background-color: crimson;
+            z-index: 2;
+        }
+
+        #box2 {
+            background-color: rgb(8, 0, 255);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box1" class="box">Box 1</div>
+    <div id="box2" class="box">Box 2</div>
+
+</body>
+
+</html>

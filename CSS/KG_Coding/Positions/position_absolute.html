@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS -- Positions (Absolute)</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #box1 {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: crimson;
+            color: white;
+            font-size: 20px;
+
+            /* position: absolute -> allows us to use top, right, bottom, left, z-index. */
+            top: 20px;
+            left: 20px;
+        }
+
+        #box2 {
+            height: 200px;
+            width: 200px;
+            background-color: seagreen;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box1">Relative Box</div>
+    <div id="box2">Demo Box</div>
+
+</body>
+
+</html>

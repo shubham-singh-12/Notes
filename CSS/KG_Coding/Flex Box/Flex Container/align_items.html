@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS -- Flex Box (Align-items -> start, end, center)</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            height: 400px;
+            width: 800px;
+            border: 5px solid black;
+            margin: 10px;
+            padding: 10px;
+            background-color: lavender;
+
+            display: flex;
+            align-items: start;
+            /* align-items: center;
+            align-items: end; */
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            color: white;
+            border: 4px solid black;
+        }
+
+        #box1 {
+            background-color: crimson;
+        }
+
+        #box2 {
+            background-color: blue;
+        }
+
+        #box3 {
+            background-color: cornflowerblue;
+        }
+
+        #box4 {
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="box1" class="box">Box 1</div>
+        <div id="box2" class="box">Box 2</div>
+        <div id="box3" class="box">Box 3</div>
+        <div id="box4" class="box">Box 4</div>
+    </div>
+
+</body>
+
+</html>

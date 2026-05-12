@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS -- Float Property</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #my-container {
+            height: 200px;
+            width: 500px;
+            border: 2px solid black;
+            margin: 10px 20px;
+        }
+
+
+        .box {
+            height: 170px;
+            width: 150px;
+            margin-top: 15px;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        #box1 {
+            float: left;
+            background-color: crimson;
+        }
+
+        #box2 {
+            float: right;
+            background-color: indianred;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="my-container">
+        <div id="box1" class="box">Left</div>
+        <div id="box2" class="box">Right</div>
+    </div>
+
+</body>
+
+</html>
