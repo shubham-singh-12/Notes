@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS -- Grid (grid-template-areas)</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            font-size: 30px;
+            text-align: center;
+            background-color: black;
+        }
+
+        main {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            gap: 10px;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+
+            /* grid-template-areas */
+            grid-template-areas:
+                "top-center top-center top-center"
+                "left-center center-bottom right-center"
+                "left-bottom center-bottom right-bottom"
+            ;
+        }
+
+        main > div {
+            border-radius: 20px;
+        }
+
+        .top-center {
+            background-color: lightseagreen;
+
+            /* grid-area */
+            grid-area: top-center;
+        }
+
+        .left-center {
+            background-color: royalblue;
+
+            /* grid-area */
+            grid-area: left-center;
+        }
+
+        .left-bottom {
+            background-color: cadetblue;
+
+            /* grid-area */
+            grid-area: left-bottom;
+        }
+
+        .center-bottom {
+            background-color: crimson;
+
+            /* grid-area */
+            grid-area: center-bottom;
+        }
+
+        .right-center {
+            background-color: tan;
+
+            /* grid-area */
+            grid-area: right-center;
+        }
+
+        .right-bottom {
+            background-color: aqua;
+
+            /* grid-area */
+            grid-area: right-bottom;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="top-center"></div>
+
+        <div class="left-center"></div>
+        <div class="left-bottom"></div>
+
+        <div class="center-bottom"></div>
+
+        <div class="right-center"></div>
+        <div class="right-bottom"></div>
+    </main>
+
+</body>
+
+</html>

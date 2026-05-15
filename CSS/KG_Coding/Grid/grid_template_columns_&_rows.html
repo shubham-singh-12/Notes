@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS -- Grid (grid-template-column & grid-template-rows)</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            display: grid;
+
+            /* Create 3 column of 25%, 50%, 25% */
+            grid-template-columns: 25% 50% 25%;
+
+            /* Create 3 rows of 30%, 50%, 20% */
+            grid-template-rows: 30% 50% 20%;
+
+
+            /* We use fr also */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-rows: 3fr 5fr 2fr; */
+
+
+            /* We can use repeat() function */
+            /* grid-template-columns: repeat(2, 50%); */
+            /* grid-template-rows: repeat(5, 20%); */
+        }
+
+        .item {
+            background-color: crimson;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+    </div>
+
+</body>
+
+</html>

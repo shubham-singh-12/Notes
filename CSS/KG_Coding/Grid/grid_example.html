@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS -- Grid (Example)</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 20px;
+            display: grid;
+            grid-template-columns: 50px 50px;
+            grid-template-rows: 50px 50px;
+        }
+
+        .item1 {
+            background-color: crimson;
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        .item2 {
+            background-color: salmon;
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        .item3 {
+            background-color: green;
+            grid-column: 1 / 2;
+            grid-row: 2 / 2;
+        }
+
+        .item4 {
+            background-color: tan;
+            grid-column: 2 / 2;
+            grid-row: 2 / 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+    </div>
+
+</body>
+
+</html>

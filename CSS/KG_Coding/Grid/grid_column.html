@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS -- Grid (grid-column-start & end)</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        main {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 10% 40% 40% 10%;
+        }
+
+        header {
+            background-color: lightseagreen;
+
+            /* grid-column */
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+            /* grid-column (Shorthand) */
+            /* grid-column: 1 / 3; */
+        }
+
+        .leftTop {
+            background-color: blueviolet;
+
+            /* grid-column */
+            grid-column-start: 1;
+            grid-column-end: 2;
+
+            /* grid-column (Shorthand) */
+            /* grid-column: 1 / 2; */
+        }
+
+        .leftBottom {
+
+            background-color: rgb(26, 19, 225);
+            /* grid-column */
+            grid-column-start: 1;
+            grid-column-end: 2;
+
+            /* grid-column (Shorthand) */
+            /* grid-column: 1 / 2; */
+        }
+
+        .right {
+            background-color: firebrick;
+
+            /* grid-column */
+            grid-column-start: 2;
+            grid-column-end: 3;
+
+            /* grid-column (Shorthand) */
+            /* grid-column: 2 / 3; */
+        }
+
+        footer {
+            background-color: mediumseagreen;
+
+            /* grid-column */
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+            /* grid-column (Shorthand) */
+            /* grid-column: 1 / 3; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <header>Header</header>
+
+        <div class="leftTop">Left Top</div>
+        <div class="leftBottom">Left Bottom</div>
+        <div class="right">Right</div>
+
+        <footer>Footer</footer>
+    </main>
+
+</body>
+
+</html>
