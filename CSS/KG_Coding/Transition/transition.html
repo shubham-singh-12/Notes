@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS -- Transition</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        button {
+            margin: 20px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+
+            /* Transition */
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.2s;
+
+            /* Short-hand */
+            /* transition: all 0.5s ease-in-out 0.2s; */
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: white;
+            color: black;
+        }
+
+        button:active {
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button>Click Me</button>
+
+</body>
+
+</html>

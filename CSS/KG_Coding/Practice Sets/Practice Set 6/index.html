@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Practice Set 6</title>
+
+    <!-- Inline CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Question 1 */
+
+        header {
+            height: 30px;
+            background-color: crimson;
+        }
+
+        #main-nav {
+            padding-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        #main-nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+
+        /* Question 2 */
+        .image-box {
+            height: 300px;
+            width: 300px;
+            border: 5px solid black;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-box img {
+            height: 50%;
+        }
+
+        /* Question 3 */
+        .container {
+            height: 150px;
+            width: 400px;
+            border: 5px solid crimson;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 5px solid black;
+        }
+
+        #box3 {
+            flex-shrink: 0.5;
+            flex-grow: 2;
+        }
+
+        /* Question 4 */
+        .my-div {
+            height: 50px;
+            width: 50px;
+            border: 3px solid black;
+        }
+
+        @media screen and (max-width: 300px) {
+            .my-div {
+                background-color: green;
+            }
+        }
+
+        @media screen and (min-width: 300px) and (max-width: 400px) {
+            .my-div {
+                background-color: red;
+            }
+        }
+
+        @media screen and (min-width: 400px) {
+            .my-div {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. Create the same nav bar created in the "Practice Set 5" but do the spacing using flexbox ? -->
+    <header>
+        <nav id="main-nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact us</a>
+        </nav>
+    </header>
+
+
+
+    <!-- ------------------------------------------------------ -->
+
+    <!-- 2. Use flexbox to center an image inside a div ? -->
+
+    <div class="image-box">
+        <img src="./example_image.jpg" alt="car bonet image">
+    </div>
+
+
+
+    <!-- ------------------------------------------------------ -->
+
+    <!-- 3. Create a div with 3 boxes where 2 boxes have fixed size, but the 3rd box grow and shrink with container size ? -->
+
+    <div class="container">
+        <div id="box1" class="box">Box 1</div>
+        <div id="box2" class="box">Box 2</div>
+        <div id="box3" class="box">Box 3</div>
+    </div>
+
+
+
+    <!-- ------------------------------------------------------ -->
+    <!-- 4. Create a div of 50px by 50px with color green It should respond to following conditions:
+>   - Keep color green under 300px of view.
+>   - Change color to red from 300px to 400px.
+>   - Change color to blue after 400px. -->
+
+    <div class="my-div"></div>
+
+</body>
+
+</html>

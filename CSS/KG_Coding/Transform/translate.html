@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS -- Transform (Translate)</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            margin: 50px;
+            color: white;
+            font-size: 20px;
+            border: 2px solid black;
+            background-color: crimson;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .box:hover {
+            cursor: pointer;
+            color: black;
+            background-color: cyan;
+            transform: translate(50px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">Translate</div>
+
+</body>
+
+</html>
