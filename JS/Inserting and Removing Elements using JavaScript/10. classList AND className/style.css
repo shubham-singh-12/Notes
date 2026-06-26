@@ -1,0 +1,17 @@
+.container {
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.red {
+  color: red;
+}
+
+.bg-green {
+  background-color: lightgreen;
+}
+
+.shubham {
+  font-weight: bol;
+  font-size: 20px;
+}
