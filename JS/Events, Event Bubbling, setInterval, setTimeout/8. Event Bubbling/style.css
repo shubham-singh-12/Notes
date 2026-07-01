@@ -1,0 +1,20 @@
+.container {
+  background-color: lightyellow;
+  padding: 14px;
+  margin: 14px;
+  border: 2px solid black;
+}
+.child-container {
+  background-color: lightblue;
+  padding: 14px;
+  margin: 14px;
+  border: 2px solid black;
+}
+.child {
+  background-color: aliceblue;
+  padding: 34px;
+  margin: 34px;
+  border: 2px solid black;
+  display: inline-block;
+  cursor: pointer;
+}

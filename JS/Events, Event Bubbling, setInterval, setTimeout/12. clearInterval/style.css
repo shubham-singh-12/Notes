@@ -1,0 +1,13 @@
+.box {
+  padding: 30px;
+  border: 2px solid black;
+  display: inline-block;
+  margin: 10px;
+  font-size: 18px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
