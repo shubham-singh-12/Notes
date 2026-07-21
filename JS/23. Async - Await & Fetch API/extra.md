@@ -1,0 +1,6 @@
+Loading modules...
+Do something else
+Waiting for data...
+Task 2 - Runs without waiting for main()
+Data Received: 455
+Now processing data.

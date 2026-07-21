@@ -1,0 +1,19 @@
+// ================================================================= PROMISE.ALLSETTLED() =================================================================
+
+let prom_1 = new Promise(function(res, rej) {
+    setTimeout(function() {
+        res("Promise 1: SUCCESS ✅");
+    }, 1000);
+});
+
+let prom_2 = new Promise(function (res, rej) {
+    setTimeout(function () {
+        rej("Promise 2: FAILED ❌");
+    }, 2000);
+});
+
+
+Promise.allSettled([prom_1, prom_2])
+    .then(function(result) {
+        console.log(result);
+    });
