@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+}
+
+.card {
+  background-color: crimson;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+}
+
+/* ======================== Navbar CSS ========================= */
+.nav {
+  background-color: aqua;
+  padding: 10px;
+  color: #111;
+  font-size: 20px;
+}
