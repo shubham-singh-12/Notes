@@ -72,11 +72,18 @@
 - Optional Chaining
 
 ## Chapter 04 - Conditional Flow
-- if else
+- if, if-else, if-else-if, Nested if
 - switch
-- for loop
-- while loop
-- do while loop
-- break
-- continue
-- labels
+- Loops (for loop, while loop, do-while loop)
+- break AND continue
+- Labels
+
+## Chapter 05 - Functions
+- Return Keyword
+- Default Parameters
+- Rest Parameters
+- Spread Operator
+- Recursion
+- Higher Order Function
+- Callback Functions
+- First Class Functions
